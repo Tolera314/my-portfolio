@@ -1,0 +1,175 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 260 25% 98%;
+    --foreground: 260 50% 10%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 260 50% 10%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 260 50% 10%;
+    
+    --primary: 265 89% 70%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 199 95% 74%;
+    --secondary-foreground: 260 50% 10%;
+    
+    --muted: 260 20% 96%;
+    --muted-foreground: 260 20% 40%;
+    
+    --accent: 300 89% 60%;
+    --accent-foreground: 0 0% 100%;
+    
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 260 20% 92%;
+    --input: 260 20% 92%;
+    --ring: 260 50% 50%;
+    
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 260 20% 10%;
+    --foreground: 260 20% 98%;
+    
+    --card: 260 25% 15%;
+    --card-foreground: 260 20% 98%;
+    
+    --popover: 260 25% 15%;
+    --popover-foreground: 260 20% 98%;
+    
+    --primary: 265 89% 70%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 199 95% 74%;
+    --secondary-foreground: 260 50% 10%;
+    
+    --muted: 260 20% 18%;
+    --muted-foreground: 260 20% 70%;
+    
+    --accent: 300 89% 60%;
+    --accent-foreground: 0 0% 100%;
+    
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 260 20% 25%;
+    --input: 260 20% 25%;
+    --ring: 260 50% 50%;
+  }
+
+  * {
+    @apply border-border;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+  
+  ::selection {
+    @apply bg-primary/20 text-primary;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .font-display {
+    font-family: 'Playfair Display', serif;
+  }
+
+  .font-body {
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer components {
+  .btn-gradient {
+    @apply relative inline-flex items-center justify-center overflow-hidden rounded-md bg-gradient-to-r from-primary to-secondary px-6 py-3 font-medium text-white shadow-md transition-all duration-300;
+  }
+  
+  .btn-gradient:hover {
+    @apply shadow-lg shadow-primary/30;
+  }
+  
+  .btn-gradient:active {
+    @apply shadow-sm;
+  }
+  
+  .section-title {
+    @apply font-display text-3xl font-bold text-foreground md:text-4xl lg:text-5xl dark:text-white;
+  }
+  
+  .section-subtitle {
+    @apply mt-2 text-lg text-muted-foreground md:text-xl;
+  }
+  
+  .gradient-border {
+    @apply relative rounded-xl border border-transparent before:absolute before:-inset-[1px] before:rounded-xl before:bg-gradient-to-r before:from-primary before:to-secondary before:content-[''] after:absolute after:inset-0 after:rounded-xl after:bg-card after:content-[''] dark:after:bg-gray-800;
+  }
+  
+  .gradient-bg {
+    @apply bg-gradient-to-r from-primary to-secondary;
+  }
+  
+  .shimmer {
+    @apply relative overflow-hidden before:absolute before:inset-0 before:-translate-x-full before:animate-shimmer before:bg-gradient-to-r before:from-transparent before:via-white/30 before:to-transparent dark:before:via-white/10;
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-1;
+  }
+  
+  .blur-bg {
+    @apply relative before:absolute before:-inset-0.5 before:rounded-lg before:bg-gradient-to-r before:from-primary/20 before:to-secondary/20 before:blur-xl;
+  }
+
+  .glass-card {
+    @apply bg-white/10 backdrop-blur-lg border border-white/20 dark:bg-black/30 dark:border-white/10;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient 15s ease infinite;
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+}
