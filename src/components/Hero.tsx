@@ -105,7 +105,7 @@ const Hero = () => {
               className="flex space-x-4 pt-4"
             >
               <a 
-                href="https://github.com" 
+                href="https://github.com/Tolera314" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="p-2 rounded-full border border-border dark:border-gray-700 hover:border-primary hover:text-primary transition-colors"
@@ -114,7 +114,7 @@ const Hero = () => {
                 <Github size={20} />
               </a>
               <a 
-                href="www.linkedin.com/in/tolera-fayisa" 
+                href="https://www.linkedin.com/in/tolera-fayisa-590387344/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="p-2 rounded-full border border-border dark:border-gray-700 hover:border-primary hover:text-primary transition-colors"

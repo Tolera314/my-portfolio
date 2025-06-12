@@ -9,9 +9,8 @@ interface SocialLink {
 
 const SocialLinks = () => {
   const socialLinks: SocialLink[] = [
-    { icon: <Github className="h-5 w-5" />, link: 'https://github.com' },
-    { icon: <Linkedin className="h-5 w-5" />, link: 'https://linkedin.com' },
-    { icon: <Instagram className="h-5 w-5" />, link: 'https://instagram.com' },
+    { icon: <Github className="h-5 w-5" />, link: 'https://github.com/Tolera314' },
+    { icon: <Linkedin className="h-5 w-5" />, link: 'https://www.linkedin.com/in/tolera-fayisa-590387344/' },
   ];
 
   return (
