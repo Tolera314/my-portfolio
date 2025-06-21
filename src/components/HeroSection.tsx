@@ -370,22 +370,8 @@ const HeroSection = () => {
                 animation: "levitate 6s ease-in-out infinite",
               }}
             >
-              {/* Multiple Rotating Rings */}
-              <div
-                className="absolute inset-0 rounded-full p-1"
-                style={{
-                  background: "linear-gradient(45deg, #00d9ff, #8000ff, #ff0080)",
-                  animation: "spin-crazy 3s linear infinite",
-                }}
-              >
-                <div
-                  className="w-full h-full rounded-full"
-                  style={{
-                    background: "linear-gradient(135deg, rgba(0,0,0,0.9), rgba(64,64,64,0.9))",
-                  }}
-                ></div>
-              </div>
-
+        
+              
               <div
                 className="absolute -inset-2 rounded-full p-1 opacity-70"
                 style={{
@@ -395,32 +381,6 @@ const HeroSection = () => {
               >
                 <div className="w-full h-full bg-transparent rounded-full"></div>
               </div>
-
-              {/* Pulsing Energy Rings */}
-              <div
-                className="absolute -inset-4 border-2 rounded-full"
-                style={{
-                  borderColor: "rgba(0, 217, 255, 0.5)",
-                  animation: "pulse-ring-crazy 2s ease-out infinite",
-                }}
-              />
-              <div
-                className="absolute -inset-8 border rounded-full"
-                style={{
-                  borderColor: "rgba(128, 0, 255, 0.3)",
-                  animation: "pulse-ring-crazy 2s ease-out infinite",
-                  animationDelay: "0.5s",
-                }}
-              />
-              <div
-                className="absolute -inset-12 border rounded-full"
-                style={{
-                  borderColor: "rgba(255, 0, 128, 0.2)",
-                  animation: "pulse-ring-crazy 2s ease-out infinite",
-                  animationDelay: "1s",
-                }}
-              />
-
               {/* Profile Image */}
               <div
                 className="relative w-full h-full rounded-full overflow-hidden transform transition-all duration-700 group-hover:scale-110 group-hover:rotate-12"
@@ -438,32 +398,8 @@ const HeroSection = () => {
                   }}
                 />
 
-                {/* Holographic Overlays */}
-                <div
-                  className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-700"
-                  style={{
-                    background: "linear-gradient(45deg, rgba(0,217,255,0.3), transparent, rgba(128,0,255,0.3))",
-                    animation: "hologram 2s ease-in-out infinite",
-                  }}
-                ></div>
-                <div
-                  className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-700"
-                  style={{
-                    background: "linear-gradient(-45deg, rgba(255,0,128,0.2), transparent, rgba(0,217,255,0.2))",
-                    animation: "hologram-reverse 2.5s ease-in-out infinite",
-                  }}
-                ></div>
+                
               </div>
-
-              {/* Orbiting Particles */}
-              <div
-                className="absolute top-10 -right-4 w-4 h-4 rounded-full"
-                style={{
-                  backgroundColor: "#00d9ff",
-                  boxShadow: "0 0 20px rgba(0,217,255,0.8)",
-                  animation: "orbit-1 8s linear infinite",
-                }}
-              ></div>
               <div
                 className="absolute bottom-20 -left-6 w-3 h-3 rounded-full"
                 style={{

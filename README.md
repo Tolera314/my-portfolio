@@ -1,4 +1,4 @@
-# 🚀 My Developer Portfolio
+# 🚀 My Portfolio
 
 A visually creative, fully responsive, and performance-optimized portfolio website built with modern web technologies. This project showcases my skills, featured projects, contact info, and more.
 
