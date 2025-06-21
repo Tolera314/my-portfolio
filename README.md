@@ -1,73 +1,70 @@
-# Welcome to your Lovable project
+# 🚀 My Developer Portfolio
 
-## Project info
+A visually creative, fully responsive, and performance-optimized portfolio website built with modern web technologies. This project showcases my skills, featured projects, contact info, and more.
 
-**URL**: https://lovable.dev/projects/dc91b9be-4d83-40df-9ad2-582c1db381a5
+---
 
-## How can I edit this code?
+## 🛠 Built With
 
-There are several ways of editing your application.
+- ⚡ [Vite](https://vitejs.dev/) – Lightning-fast development build tool  
+- ⚛️ [React](https://reactjs.org/) – Component-based JavaScript UI library  
+- 🔷 [TypeScript](https://www.typescriptlang.org/) – Strongly typed JavaScript  
+- 💄 [shadcn/ui](https://ui.shadcn.com/) – Beautifully designed UI components  
+- 🎨 [Tailwind CSS](https://tailwindcss.com/) – Utility-first CSS framework  
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/dc91b9be-4d83-40df-9ad2-582c1db381a5) and start prompting.
+## 📸 Features
 
-Changes made via Lovable will be committed automatically to this repo.
+- 🔥 Smooth 3D and motion animations  
+- 🎯 Category-based project filtering  
+- 🌙 Dark mode-ready (if supported)  
+- 💌 Fully functional contact form (powered by EmailJS)  
+- ⚙️ Easy to maintain and scale  
 
-**Use your preferred IDE**
+## 🚀 Getting Started
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### 1. Clone the repository
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```bash
+git clone https://github.com/yourusername/my-portfolio.git
+cd my-portfolio
 ```
 
-**Edit a file directly in GitHub**
+### 2. Install dependencies
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```bash
+npm install
+# or
+yarn
+```
 
-**Use GitHub Codespaces**
+### 3. Run the development server
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-## What technologies are used for this project?
+---
 
-This project is built with:
+## 🌐 Live Demo
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+[View Portfolio Live →](https://tolera-fayisa.netlify.app/)
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/dc91b9be-4d83-40df-9ad2-582c1db381a5) and click on Share -> Publish.
+## 📬 Contact
 
-## Can I connect a custom domain to my Lovable project?
+If you'd like to connect or collaborate, feel free to reach out!
 
-Yes, you can!
+- **Email:** tolefayiss@gmail.com  
+- **LinkedIn:** [Tolera Fayisa](https://www.linkedin.com/in/tolera-fayisa-590387344)  
+- **GitHub:** [@Tolera314](https://github.com/Tolera314)
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+---
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## 📄 License
+
+This project is not open source.
