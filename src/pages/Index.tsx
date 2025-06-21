@@ -1,73 +1,50 @@
 
-import React, { useEffect, useState } from 'react';
-import { motion } from 'framer-motion';
-import Navbar from '@/components/Navbar';
-import Hero from '@/components/Hero';
-import About from '@/components/About';
-import Projects from '@/components/Projects';
-import Skills from '@/components/Skills';
-import Contact from '@/components/Contact';
-import Footer from '@/components/Footer';
-import { MotionConfig } from 'framer-motion';
-import { Sun, Moon } from 'lucide-react';
-import emailjs from 'emailjs-com';
-
+import React from 'react';
+import ParticleBackground from '../components/ParticleBackground';
+import Navigation from '../components/Navigation';
+import DarkModeToggle from '../components/DarkModeToggle';
+import HeroSection from '../components/HeroSection';
+import AboutSection from '../components/AboutSection';
+import ProjectsSection from '../components/ProjectsSection';
+import CertificatesSection from '../components/CertificatesSection';
+import ContactSection from '../components/ContactSection';
+import ScrollAnimations from '../components/ScrollAnimations';
+import { ScrollToTop } from "../components/scroll-to-top";
 const Index = () => {
-  const [theme, setTheme] = useState('light');
-
-  useEffect(() => {
-    document.title = 'Tolera Fayisa | Front-end Developer';
-    
-    // Check for saved theme preference or use system preference
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme) {
-      setTheme(savedTheme);
-      document.documentElement.classList.toggle('dark', savedTheme === 'dark');
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      setTheme('dark');
-      document.documentElement.classList.add('dark');
-    }
-
-    // Initialize EmailJS
-    emailjs.init("X1GW-TllRkn5GKxHG"); 
-  }, []);
-
-  const toggleTheme = () => {
-    const newTheme = theme === 'light' ? 'dark' : 'light';
-    setTheme(newTheme);
-    localStorage.setItem('theme', newTheme);
-    document.documentElement.classList.toggle('dark', newTheme === 'dark');
-  };
-
   return (
-    <MotionConfig reducedMotion="user">
-      <div className="min-h-screen bg-background dark:bg-gray-900 transition-colors duration-300">
-        <Navbar />
-        
-        {/* Theme toggle button */}
-        <button 
-          onClick={toggleTheme}
-          className="fixed right-6 top-24 z-50 p-2 rounded-full bg-card dark:bg-gray-800 border border-border dark:border-gray-700 shadow-md transition-all hover:scale-110"
-          aria-label="Toggle theme"
-        >
-          {theme === 'light' ? <Moon size={20} /> : <Sun size={20} />}
-        </button>
-        
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5 }}
-          className="overflow-hidden"
-        >
-          <Hero />
-          <About />
-          <Projects />
-          <Skills />
-          <Contact />
-          <Footer />
-        </motion.div>
-      </div>
-    </MotionConfig>
+    <div className="min-h-screen bg-gradient-animated text-white relative overflow-x-hidden">
+      <ParticleBackground />
+      <Navigation />
+      <DarkModeToggle />
+      <ScrollAnimations />
+      
+      <main className="relative z-10">
+        <section id="home">
+          <HeroSection />
+        </section>
+        <section id="about">
+          <AboutSection />
+        </section>
+        <section id="projects">
+          <ProjectsSection />
+        </section>
+        <section id="certificates">
+          <CertificatesSection />
+        </section>
+        <section id="contact">
+          <ContactSection />
+        </section>
+      </main>
+<ScrollToTop />
+      {/* Footer */}
+      <footer className="relative z-10 py-8 text-center border-t border-gray-800/50">
+        <div className="max-w-4xl mx-auto px-4">
+          <p className="text-gray-400">
+            © 2024 Tolera Fayisa. Crafted with passion and innovation.
+          </p>
+        </div>
+      </footer>
+    </div>
   );
 };
 
