@@ -59,7 +59,7 @@ const ProjectsSection = () => {
     {
       id: 4,
       title: "Weather App",
-      description: "Responsive weather app with real-time weather updates using OpenWeatherMap API.",
+      description: "Responsive weather app with real-time weather updates using WeatherAPI.",
       image: "/wether_app.png",
       tech: ["React", "Typescript", "OpenWeatherMap API", "Tailwind CSS"],
       category: "website",
